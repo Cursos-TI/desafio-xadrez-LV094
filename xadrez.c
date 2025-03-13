@@ -17,25 +17,30 @@ int main() {
     // Implementação de Movimentação da Rainha
     // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
 
-    int CimaDireita, Direita, Esquerda = 1;
+    int CimaDireita = 1, Direita = 1, Esquerda = 1;
 
     while (CimaDireita <= 5)
     {
-        printf("CimaDireita\n", CimaDireita);
+        printf("CimaDireita \n", CimaDireita);
 
         CimaDireita++;
+
     } printf("O bispo andou 5 casas para a diagonal! \n");
 
     do {
 
         printf("Direita\n", Direita);
         Direita++;
-    } while (Direita <= 5); {
 
-    
-    } printf("A torre andou 5 casas para a orizontal");
+    } while (Direita <= 5);
 
+     printf("A torre andou 5 casas para a horizontal \n");
 
+    for (Esquerda = 1; Esquerda <= 8; Esquerda++)
+    {
+        printf("Esquerda\n", Esquerda);
+    }
+    printf("A rainha andou 8 casas para a esquerda! \n");
 
     return 0;
 }
